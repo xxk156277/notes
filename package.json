@@ -1,0 +1,14 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "study notes",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  }
+}
