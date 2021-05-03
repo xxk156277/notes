@@ -18,6 +18,10 @@ module.exports = [
             {
                 text:'Vue',
                 link: '/Vue/'
+            },
+            {
+                text:'面经',
+                link: '/experience/'
             }
         ]
     },

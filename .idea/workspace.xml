@@ -20,17 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de84b222-5dd4-4cba-beca-78d18f5459f1" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/nav/nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/image/ModernJs/8.1.1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/sidebar/sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Algorithm/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Others/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/html/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/image/guagua.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/guagua.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/javascript.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/javascript/URL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/sidebar/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/sidebar/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/javascript/04-Object/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/javascript/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/javascript/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js1/javascript.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +55,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AAnotes\vuepress-starter\docs\javascript" />
       <recent name="D:\AAnotes\vuepress-starter\docs\front-end\html" />
       <recent name="D:\AAnotes\vuepress-starter\docs\front-end" />
       <recent name="D:\AAnotes\vuepress-starter\docs" />
-      <recent name="D:\AAnotes\vuepress-starter\docs\javascript" />
       <recent name="D:\AAnotes\vuepress-starter\docs\.vuepress\public\image\ModernJs" />
     </key>
   </component>
@@ -77,6 +73,7 @@
       <workItem from="1617961138771" duration="923000" />
       <workItem from="1618298860891" duration="4635000" />
       <workItem from="1618923698427" duration="883000" />
+      <workItem from="1619101022468" duration="1307000" />
     </task>
     <servers />
   </component>
