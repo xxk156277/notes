@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>八.原型、继承 | Xxk&#39;notes</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/notes/assets/css/0.styles.04c41152.css" as="style"><link rel="preload" href="/notes/assets/js/app.07575453.js" as="script"><link rel="preload" href="/notes/assets/js/2.3eba13e5.js" as="script"><link rel="preload" href="/notes/assets/js/23.1cdb2aaf.js" as="script"><link rel="prefetch" href="/notes/assets/js/10.e42fcb09.js"><link rel="prefetch" href="/notes/assets/js/11.cf9c4e89.js"><link rel="prefetch" href="/notes/assets/js/12.8716224a.js"><link rel="prefetch" href="/notes/assets/js/13.4d996839.js"><link rel="prefetch" href="/notes/assets/js/14.887ab298.js"><link rel="prefetch" href="/notes/assets/js/15.6f9d2279.js"><link rel="prefetch" href="/notes/assets/js/16.eac91036.js"><link rel="prefetch" href="/notes/assets/js/17.dfa56d25.js"><link rel="prefetch" href="/notes/assets/js/18.c0dd440e.js"><link rel="prefetch" href="/notes/assets/js/19.8772fd2d.js"><link rel="prefetch" href="/notes/assets/js/20.01d8f327.js"><link rel="prefetch" href="/notes/assets/js/21.bd9c35a0.js"><link rel="prefetch" href="/notes/assets/js/22.c49495d1.js"><link rel="prefetch" href="/notes/assets/js/24.45902c8f.js"><link rel="prefetch" href="/notes/assets/js/25.ec350de2.js"><link rel="prefetch" href="/notes/assets/js/26.0122d4b3.js"><link rel="prefetch" href="/notes/assets/js/3.87a95941.js"><link rel="prefetch" href="/notes/assets/js/4.5e24ac21.js"><link rel="prefetch" href="/notes/assets/js/5.8e40db70.js"><link rel="prefetch" href="/notes/assets/js/6.cb7cec23.js"><link rel="prefetch" href="/notes/assets/js/7.b4fa344a.js"><link rel="prefetch" href="/notes/assets/js/8.068642c5.js"><link rel="prefetch" href="/notes/assets/js/9.b2378d13.js">
+    <link rel="stylesheet" href="/notes/assets/css/0.styles.04c41152.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notes/" class="home-link router-link-active"><img src="/notes/guagua.jpg" alt="Xxk'notes" class="logo"> <span class="site-name can-hide">Xxk'notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notes/" class="nav-link">
+  首页|Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端|Front-end</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端|Front-end</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/notes/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/notes/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/notes/experience/" class="nav-link">
+  面经
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法|Algorithm</span> <span class="arrow down"></span></button> <button type="button" aria-label="算法" class="mobile-dropdown-title"><span class="title">算法|Algorithm</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/Algorithm/" class="nav-link">
+  Algorithm
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他 | Others</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他 | Others</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/Others/" class="nav-link">
+  随想
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notes/" class="nav-link">
+  首页|Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端|Front-end</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端|Front-end</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/notes/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/notes/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/notes/experience/" class="nav-link">
+  面经
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法|Algorithm</span> <span class="arrow down"></span></button> <button type="button" aria-label="算法" class="mobile-dropdown-title"><span class="title">算法|Algorithm</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/Algorithm/" class="nav-link">
+  Algorithm
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他 | Others</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他 | Others</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/Others/" class="nav-link">
+  随想
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/notes/javascript/" aria-current="page" class="sidebar-link">我是真的不会啊</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>算法代码</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/javascript/URL.html" class="sidebar-link">URL 与 URI 的解惑、URL拆解</a></li><li><a href="/notes/javascript/Promise.html" class="sidebar-link">Promise</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>js现代教程笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/javascript/04-Object.html" class="sidebar-link">四.Object：基础知识</a></li><li><a href="/notes/javascript/05-数据类型.html" class="sidebar-link">五.数据类型</a></li><li><a href="/notes/javascript/08-原型、继承.html" class="active sidebar-link">八.原型、继承</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/javascript/08-原型、继承.html#_8-1原型继承" class="sidebar-link">8.1原型继承</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="八-原型、继承"><a href="#八-原型、继承" class="header-anchor">#</a> 八.原型、继承</h1> <h2 id="_8-1原型继承"><a href="#_8-1原型继承" class="header-anchor">#</a> 8.1原型继承</h2> <p>在JavaScript中，对象有一个特殊的隐藏属性[[Prototype]],它要么为null，要么就是对另一个对象的引用。该对象被称为“原型”：</p> <p>原型继承：当我们从object中读取某个确实的属性时，JavaScript会自动从原型中获取该属性。</p> <h3 id="prototype"><a href="#prototype" class="header-anchor">#</a> [[Prototype]]</h3> <p>可以通过<code>__proto__</code>设置[[Prototype]]属性</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> animal <span class="token operator">=</span> <span class="token punctuation">{</span>
+    eats<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> rabbit <span class="token operator">=</span> <span class="token punctuation">{</span>
+    jumps<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+    __proto__<span class="token operator">:</span>animal <span class="token comment">//设置[[Prototype]]属性</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//将 animal 设置为 rabbit 的原型。</span>
+<span class="token comment">//rabbit.__proto__ = animal; //设置[[Prototype]]属性</span>
+
+<span class="token comment">// 现在这两个属性我们都能在 rabbit 中找到：</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> rabbit<span class="token punctuation">.</span>eats <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true (**)</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> rabbit<span class="token punctuation">.</span>jumps <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+</code></pre></div><p>原型链可以很长，可以多个对象形成一条连。但是有限制：</p> <ol><li>引用不能形成闭环。如果我们试图在一个闭环中分配 <code>__proto__</code>，JavaScript 会抛出错误。</li> <li><code>__proto__</code> 的值可以是对象，也可以是 <code>null</code>。而其他的类型都会被忽略。</li> <li>只能有一个 <code>[[Prototype]]</code>。一个对象不能从其他两个对象获得继承。</li></ol> <blockquote><p>注意：</p> <p>1、<code>__proto__</code> 与内部的 <code>[[Prototype]]</code> <strong>不一样</strong>。<code>__proto__</code> 是 <code>[[Prototype]]</code> 的 getter/setter。</p> <p>2、<code>__proto__</code> 属性有点过时了。它的存在是出于历史的原因，现代编程语言建议我们应该使用函数 <code>Object.getPrototypeOf/Object.setPrototypeOf</code> 来取代 <code>__proto__</code> 去 get/set 原型。</p></blockquote> <h3 id="写入不使用原型"><a href="#写入不使用原型" class="header-anchor">#</a> 写入不使用原型</h3></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notes/javascript/05-数据类型.html" class="prev">
+        五.数据类型
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/notes/assets/js/app.07575453.js" defer></script><script src="/notes/assets/js/2.3eba13e5.js" defer></script><script src="/notes/assets/js/23.1cdb2aaf.js" defer></script>
+  </body>
+</html>
